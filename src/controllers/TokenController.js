@@ -7,7 +7,6 @@ class TokenController {
       const { email = '', password = '' } = req.body;
 
       if (!email || !password) {
-        console.log('uai');
         return res.status(401).json({
           errors: ['Credenciais inválidas'],
         });
